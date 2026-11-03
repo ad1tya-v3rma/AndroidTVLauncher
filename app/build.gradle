@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.analysis.launcher'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.analysis.launcher'
+        minSdk 23
+        targetSdk 30
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = [
+                '../../Launcher/decompiled_7715/sources'
+            ]
+        }
+    }
+}
